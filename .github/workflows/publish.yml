@@ -32,3 +32,10 @@ jobs:
         publish_dir: ./output
         keep_files: true
         # cname: example.com # If you have a custom domain
+
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
+  repository-projects: write
+  statuses: write
