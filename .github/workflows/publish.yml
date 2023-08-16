@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install markdown2 # Or any other dependencies needed for render.py
+        pip install markdown2 jinja2 # Or any other dependencies needed for render.py
 
     - name: Run render.py
       run: python render.py
