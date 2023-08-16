@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ index.title | default('Profile') }}</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Profile Page</h1>
+        <!-- Add navigation links or other header elements if needed -->
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            {{ index | safe }}
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            {{ projects | safe }}
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            {{ publications | safe }}
+        </section>
+    </main>
+
+    <footer>
+        <!-- You can add a footer with additional information or links here -->
+    </footer>
+</body>
+</html>
