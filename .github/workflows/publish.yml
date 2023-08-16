@@ -1,0 +1,34 @@
+name: Render Markdown to HTML
+
+on:
+  push:
+    branches:
+      - main # You can change this to the branch you want to run the workflow on
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x' # You can specify a specific version if needed
+
+    - name: Install dependencies
+      run: |
+        pip install markdown2 # Or any other dependencies needed for render.py
+
+    - name: Run render.py
+      run: python render.py
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
+        keep_files: true
+        # cname: example.com # If you have a custom domain
