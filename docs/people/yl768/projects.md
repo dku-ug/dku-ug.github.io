@@ -4,7 +4,7 @@ This page showcases my research and academic projects. For more detailed informa
 
 ## Ongoing Projects
 
-### [Project Title 1]
+### [Kunqu Opera Singing Voice Synthesis]
 
 - **Description**: [Provide a brief description of the project, its goals, and its current status]
 - **Technologies Used**: [List the technologies, tools, or methods used in the project]
@@ -12,9 +12,7 @@ This page showcases my research and academic projects. For more detailed informa
 - **Links**: [Provide links to the project's website, GitHub repository, or any other relevant resources]
 - **Timeline**: [Provide the expected completion date or milestones]
 
-[Repeat the above format for additional ongoing projects]
-
-## Completed Projects
+<!-- ## Completed Projects
 
 ### [Project Title 2]
 
@@ -24,7 +22,7 @@ This page showcases my research and academic projects. For more detailed informa
 - **Links**: [Provide links to the project's website, GitHub repository, or any other relevant resources]
 - **Completion Date**: [Provide the date of completion]
 
-[Repeat the above format for additional completed projects]
+[Repeat the above format for additional completed projects] -->
 
 ---
 

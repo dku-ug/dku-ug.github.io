@@ -4,24 +4,16 @@
 
 ## About Me
 
-I am a [Your Position, e.g., Undergraduate/Graduate Student] at [Duke Kunshan University], specializing in [Your Field of Study or Research Interest].
-
-[Provide a brief biography, highlighting your academic background, interests, and any other relevant information.]
+I am Yueqian Lin
 
 ## Research Interests
 
-- **Interest 1**: [Provide a brief description or elaboration]
-- **Interest 2**: [Provide a brief description or elaboration]
-- [Add more as needed]
+- **Interest 1**: Singing Voice Syntheisis
+- **Interest 2**: Human-comupter interaction
 
 ## Contact Information
 
-- **Email**: [Your Email Address]
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [Your GitHub Profile]
-- [Any other relevant contact methods]
-
-[Optionally, you can include a section for upcoming events, talks, or any other noteworthy information.]
+- **Email**: [mailto:yl768@duke.edu](yl768@duke.edu)
 
 ---
 
