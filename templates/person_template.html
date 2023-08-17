@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ index.title | default('Profile') }}</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional CSS file for styling -->
+    <title>{{ name }}</title>
+    <link rel="stylesheet" href="../../style.css"> <!-- Optional CSS file for styling -->
     {% if custom_css %}
     <link rel="stylesheet" href="{{ custom_css }}">
     {% endif %}
@@ -13,6 +13,9 @@
     <header>
         <h1>Profile Page</h1>
         <!-- Add navigation links or other header elements if needed -->
+        <nav>
+            <a href="../../index.html">Home</a> <!-- Link to the home page -->
+        </nav>
     </header>
     {% if custom_js %}
     <script src="{{ custom_js }}"></script>

@@ -16,6 +16,22 @@ header {
     padding: 20px 0;
 }
 
+nav {
+    text-align: center;
+    padding: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 h1 {
     font-size: 24px;
 }

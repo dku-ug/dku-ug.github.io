@@ -1,4 +1,4 @@
-# [Yueqian Lin]
+# Yueqian Lin
 
 ![Profile Picture](profile-picture.jpg) <!-- You can replace this with a link to your profile image -->
 
