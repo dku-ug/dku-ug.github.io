@@ -1,6 +1,7 @@
 # Zhixian Zhang
 
-![Profile Picture](profile-picture.jpg) `<!-- You can replace this with a link to your profile image -->`
+<img src="assets/img/profile.png" alt="Profile Picture" class="profile-picture">
+
 
 ## About Me
 

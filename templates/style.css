@@ -32,6 +32,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.profile-picture {
+    width: 200px;
+    height: 200px;
+}
+
+
 h1 {
     font-size: 24px;
 }
