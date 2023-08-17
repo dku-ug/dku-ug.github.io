@@ -45,3 +45,5 @@ with open('output/all_people.html', 'w') as file:
     file.write(output)
 # copy to index.html
 os.system('cp output/all_people.html output/index.html')
+# copy css file to output
+os.system('cp templates/style.css output/style.css')
