@@ -61,8 +61,14 @@ for person_dir in os.listdir('docs/people'):
         assets_dir = None
     # Read markdown files
     index_html = markdown_to_html(index_md_path)
-    projects_html = markdown_to_html(os.path.join('docs/people', person_dir, 'projects.md'))
-    publications_html = markdown_to_html(os.path.join('docs/people', person_dir, 'publications.md'))
+    if os.path.exists(os.path.join('docs/people', person_dir, 'projects.md')):
+        projects_html = markdown_to_html(os.path.join('docs/people', person_dir, 'projects.md'))
+    else:
+        projects_html = None
+    if os.path.exists(os.path.join('docs/people', person_dir, 'publications.md')):
+        publications_html = markdown_to_html(os.path.join('docs/people', person_dir, 'publications.md'))
+    else:
+        publications_html = None
 
     # Render individual HTML template
     template = env.get_template('person_template.html')
