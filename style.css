@@ -83,3 +83,12 @@ footer {
     background-color: #749f22;
     color: #fff;
 }
+
+.person {
+    margin-bottom: 20px;
+}
+
+.pin {
+    font-style: italic;
+    color: #666;
+}
