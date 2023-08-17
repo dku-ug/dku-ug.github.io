@@ -8,7 +8,7 @@ The homepage of DKU UG Scholars.
 4. Copy the `TEMPLATE` folder in `docs/people` and rename it to your NetID.
 6. Make your changes.
 7. Commit and push your changes to the new branch.
-8. Create a pull request to merge your changes to the `master` branch of this repository.
+8. Create a pull request to merge your changes to the `main` branch of this repository.
 9. Wait for the pull request to be reviewed and merged.
 10. Celebrate!
 
