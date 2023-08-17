@@ -21,3 +21,39 @@ pull_request_rules:
       label:
         remove:
           - conflict
+  - name: "auto add label=README"
+    conditions:
+      - files~=README.md
+    actions:
+      label:
+        add: ["README"]
+  - name: "auto add label=People"
+    conditions:
+      - files~=^(docs/people)
+    actions:
+      label:
+        add: ["People"]
+  - name: "auto add label=Templates"
+    conditions:
+      - files~=^(templates)
+    actions:
+      label:
+        add: ["Templates"]
+  - name: "auto add label=CI"
+    conditions:
+      - files~=^(ci/|.github/)
+    actions:
+      label:
+        add: ["CI"]
+  - name: "auto add label=Rendering"
+    conditions:
+      - files~=^render.py
+    actions:
+      label:
+        add: ["Rendering"]
+  - name: "auto add label=mergify"
+    conditions:
+      - files~=^.mergify.yml
+    actions:
+      label:
+        add: ["mergify"]
