@@ -17,7 +17,16 @@
             <h2>List of Profiles</h2>
             <ul>
                 {% for person in people %}
-                    <li><a href="people/{{ person.dir }}">{{ person.name }}</a></li>
+                    <li>
+                        <div class="person">
+                        <a href="people/{{ person.dir }}">{{ person.name }}</a>
+                        {% if person.pin %}
+                        <div class="pin">
+                            {{ person.pin | safe }} <!-- Include the pin HTML -->
+                        </div>
+                        {% endif %}
+                        </div>
+                    </li>
                 {% endfor %}
             </ul>            
         </section>
