@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ index.title | default('Profile') }}</title>
     <link rel="stylesheet" href="styles.css"> <!-- Optional CSS file for styling -->
+    {% if custom_css %}
+    <link rel="stylesheet" href="{{ custom_css }}">
+    {% endif %}
 </head>
 <body>
     <header>
         <h1>Profile Page</h1>
         <!-- Add navigation links or other header elements if needed -->
     </header>
-    
+    {% if custom_js %}
+    <script src="{{ custom_js }}"></script>
+    {% endif %}
     <main>
         <section id="about">
             <h2>About Me</h2>
