@@ -1,4 +1,4 @@
-# [Xingyu Shen]
+# Xingyu Shen
 
 <img src="assets/img/profile.png" alt="Profile Picture" class="profile-picture">
 
@@ -25,4 +25,4 @@ I am a [Your Position, e.g., Undergraduate/Graduate Student] at [Duke Kunshan Un
 
 ---
 
-For instructions on how to use this template and contribute to the repository, please refer to the README file._
+<!-- For instructions on how to use this template and contribute to the repository, please refer to the README file._ -->

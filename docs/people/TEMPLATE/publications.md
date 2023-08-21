@@ -45,4 +45,4 @@ This page lists my scholarly publications, including journal articles, conferenc
 
 ---
 
-_For instructions on how to use this template and contribute to the repository, please refer to the README file._
+<!-- For instructions on how to use this template and contribute to the repository, please refer to the README file.-->

@@ -28,4 +28,4 @@ This page showcases my research and academic projects. For more detailed informa
 
 ---
 
-_For instructions on how to use this template and contribute to the repository, please refer to the README file._
+<!-- For instructions on how to use this template and contribute to the repository, please refer to the README file.-->
