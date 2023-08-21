@@ -12,5 +12,7 @@ The homepage of DKU UG Scholars.
 9. Wait for the pull request to be reviewed and merged.
 10. Celebrate!
 
+## Core team members wanted!
+We are looking for core team members to help maintain this repository. If you are interested, please contact [core team](mailto:k_speech@duke.edu).
 ### Acknowledgements
 The GitHub workflow is adapted from [ESPnet](https://github.com/espnet/espnet).
