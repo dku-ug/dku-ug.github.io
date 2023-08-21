@@ -95,8 +95,8 @@ for person_dir in os.listdir('docs/people'):
 
 # Render collective HTML file
 template = env.get_template('all_people_template.html')
-# sort all_people by last name
-all_people = sorted(all_people, key=lambda x: x['name'].split(' ')[-1])
+# sort all_people by first name
+all_people = sorted(all_people, key=lambda x: x['name'].split(' ')[-2])
 output = template.render(people=all_people, head_nav=nav_html)
 with open('output/all_people.html', 'w') as file:
     file.write(output)
