@@ -6,8 +6,12 @@
 
 - **Description**: This project aims to synthesize singing voice for Kunqu Opera, a traditional Chinese opera genre. Let me know if you are interested in this project!
 
-<!-- ## Completed Projects
+## Completed Projects
 
+### RTVis: Research Trend Visualization
+<div class="github-card" data-github="RTVis/RTVis" data-width="400" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+<!--
 ### [Project Title 2]
 
 - **Description**: [Provide a brief description of the project, its goals, and its outcomes]
