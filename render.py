@@ -35,15 +35,15 @@ if os.path.exists('templates/component/nav.html'):
     people_nav_html = re.sub(r'href="([^"]+)"', r'href="../../\1"', nav_html)
 
 # In the loop through people's directories
-for person_dir in os.listdir('docs/people'):
-    if person_dir == '.DS_Store' or person_dir == 'TEMPLATE':
+for people_dir in os.listdir('docs/people'):
+    if people_dir == '.DS_Store' or people_dir == 'TEMPLATE':
         continue
-    base_dir = os.path.join('people', person_dir)
+    base_dir = os.path.join('people', people_dir)
     os.makedirs('output/'+base_dir, exist_ok=True)
-    index_md_path = os.path.join('docs/people', person_dir, 'index.md')
+    index_md_path = os.path.join('docs/people', people_dir, 'index.md')
     name = extract_name(index_md_path)
-    custom_css_path = os.path.join('docs/people', person_dir, 'custom/custom.css')
-    custom_js_path = os.path.join('docs/people', person_dir, 'custom/custom.js')
+    custom_css_path = os.path.join('docs/people', people_dir, 'custom/custom.css')
+    custom_js_path = os.path.join('docs/people', people_dir, 'custom/custom.js')
     # Check if the custom files exist
     # custom_css = custom_css_path if os.path.exists(custom_css_path) else None
     # custom_js = custom_js_path if os.path.exists(custom_js_path) else None
@@ -62,34 +62,34 @@ for person_dir in os.listdir('docs/people'):
         custom_js = None
 
     # copy assets folder
-    assets_dir = os.path.join('docs/people', person_dir, 'assets')
+    assets_dir = os.path.join('docs/people', people_dir, 'assets')
     if os.path.exists(assets_dir):
         shutil.copytree(assets_dir, 'output/'+os.path.join(base_dir, 'assets'))
     else:
         assets_dir = None
     # Read markdown files
     index_html = markdown_to_html(index_md_path)
-    if os.path.exists(os.path.join('docs/people', person_dir, 'projects.md')):
-        projects_html = markdown_to_html(os.path.join('docs/people', person_dir, 'projects.md'))
+    if os.path.exists(os.path.join('docs/people', people_dir, 'projects.md')):
+        projects_html = markdown_to_html(os.path.join('docs/people', people_dir, 'projects.md'))
     else:
         projects_html = None
-    if os.path.exists(os.path.join('docs/people', person_dir, 'publications.md')):
-        publications_html = markdown_to_html(os.path.join('docs/people', person_dir, 'publications.md'))
+    if os.path.exists(os.path.join('docs/people', people_dir, 'publications.md')):
+        publications_html = markdown_to_html(os.path.join('docs/people', people_dir, 'publications.md'))
     else:
         publications_html = None
 
     # Render individual HTML template
-    template = env.get_template('person_template.html')
+    template = env.get_template('people_template.html')
     output = template.render(index=index_html, projects=projects_html, publications=publications_html, custom_css=custom_css, custom_js=custom_js, name=name, head_nav=people_nav_html)
     with open(os.path.join('output', base_dir, 'index.html'), 'w') as file:
         file.write(output)
         
-    pin_path = os.path.join('docs/people', person_dir, 'pin.md')
+    pin_path = os.path.join('docs/people', people_dir, 'pin.md')
     if os.path.exists(pin_path):
         pin_html = markdown_to_html(pin_path)
     else:
         pin_html = None
-    all_people.append({'name': name, 'pin': pin_html, 'dir': person_dir})
+    all_people.append({'name': name, 'pin': pin_html, 'dir': people_dir})
         
 
 
