@@ -1,16 +1,10 @@
 # Projects
 
-This page showcases my research and academic projects. For more detailed information on any specific project, please feel free to contact me.
-
 ## Ongoing Projects
 
-### [Kunqu Opera Singing Voice Synthesis]
+### Kunqu Opera Singing Voice Synthesis
 
-- **Description**: [Provide a brief description of the project, its goals, and its current status]
-- **Technologies Used**: [List the technologies, tools, or methods used in the project]
-- **Collaborators**: [Names and/or links to profiles of collaborators]
-- **Links**: [Provide links to the project's website, GitHub repository, or any other relevant resources]
-- **Timeline**: [Provide the expected completion date or milestones]
+- **Description**: This project aims to synthesize singing voice for Kunqu Opera, a traditional Chinese opera genre. Let me know if you are interested in this project!
 
 <!-- ## Completed Projects
 
