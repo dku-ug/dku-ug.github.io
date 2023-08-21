@@ -14,7 +14,9 @@
         <h1>Profile Page</h1>
         <!-- Add navigation links or other header elements if needed -->
         <nav>
-            <a href="../../index.html">Home</a> <!-- Link to the home page -->
+            {% if head_nav %}
+                {{ head_nav | safe }}
+            {% endif %}
         </nav>
     </header>
     {% if custom_js %}

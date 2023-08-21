@@ -18,18 +18,23 @@ header {
 
 nav {
     text-align: center;
-    padding: 5px;
+    padding: 10px; 
+    background-color: #052b6f; 
+    font-family: 'Arial', sans-serif; 
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 15px; 
     font-weight: bold;
+    {% comment %} transition: background-color 0.3s, color 0.3s; {% endcomment %}
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #fff;
+    color: #052b6f;
+    border-radius: 5px;
 }
 
 .profile-picture {

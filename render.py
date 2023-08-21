@@ -1,6 +1,7 @@
 import os
 import markdown2
 import shutil
+import re
 from jinja2 import Environment, FileSystemLoader
 
 # clear output folder
@@ -25,6 +26,13 @@ def extract_name(markdown_file):
         first_line = file.readline().strip()
         name = first_line.split(' ')[-2].strip('[]') + ' ' + first_line.split(' ')[-1].strip('[]')
         return name
+    
+# Read navigation snippet if it exists
+nav_html = None
+if os.path.exists('templates/component/nav.html'):
+    with open('templates/component/nav.html', 'r') as file:
+        nav_html = file.read()
+    people_nav_html = re.sub(r'href="([^"]+)"', r'href="../../\1"', nav_html)
 
 # In the loop through people's directories
 for person_dir in os.listdir('docs/people'):
@@ -72,7 +80,7 @@ for person_dir in os.listdir('docs/people'):
 
     # Render individual HTML template
     template = env.get_template('person_template.html')
-    output = template.render(index=index_html, projects=projects_html, publications=publications_html, custom_css=custom_css, custom_js=custom_js, name=name)
+    output = template.render(index=index_html, projects=projects_html, publications=publications_html, custom_css=custom_css, custom_js=custom_js, name=name, head_nav=people_nav_html)
     with open(os.path.join('output', base_dir, 'index.html'), 'w') as file:
         file.write(output)
         
@@ -89,10 +97,10 @@ for person_dir in os.listdir('docs/people'):
 template = env.get_template('all_people_template.html')
 # sort all_people by last name
 all_people = sorted(all_people, key=lambda x: x['name'].split(' ')[-1])
-output = template.render(people=all_people)
+output = template.render(people=all_people, head_nav=nav_html)
 with open('output/all_people.html', 'w') as file:
     file.write(output)
 # copy to index.html
 os.system('cp output/all_people.html output/index.html')
-# copy css file to output
-os.system('cp templates/style.css output/style.css')
+# copy static files
+os.system('cp -r templates/static/* output/')

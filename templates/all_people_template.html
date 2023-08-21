@@ -10,6 +10,11 @@
     <header>
         <h1>All Scholars at DKU</h1>
         <!-- Add navigation links or other header elements if needed -->
+        <nav>
+            {% if head_nav %}
+                {{ head_nav | safe }}
+            {% endif %}
+        </nav>
     </header>
     
     <main>
