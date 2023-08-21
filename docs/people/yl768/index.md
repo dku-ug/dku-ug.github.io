@@ -13,7 +13,7 @@ I am Yueqian Lin
 
 ## Contact Information
 
-- **Email**: [mailto:yl768@duke.edu](yl768@duke.edu)
+- **Email**: [yl768@duke.edu](mailto:yl768@duke.edu)
 
 ---
 

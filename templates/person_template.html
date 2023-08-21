@@ -22,19 +22,20 @@
     {% endif %}
     <main>
         <section id="about">
-            <h2>About Me</h2>
             {{ index | safe }}
         </section>
 
+        {% if projects %}
         <section id="projects">
-            <h2>Projects</h2>
             {{ projects | safe }}
         </section>
+        {% endif %}
 
+        {% if publications %}
         <section id="publications">
-            <h2>Publications</h2>
             {{ publications | safe }}
         </section>
+        {% endif %}
 
         <section id="comments">
             <script src="https://giscus.app/client.js"
