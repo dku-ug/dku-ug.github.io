@@ -1,7 +1,8 @@
 import os
-import markdown2
-import shutil
 import re
+import shutil
+
+import markdown2
 from jinja2 import Environment, FileSystemLoader
 
 # clear output folder
