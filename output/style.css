@@ -18,15 +18,15 @@ header {
 
 nav {
     text-align: center;
-    padding: 10px; 
-    background-color: #052b6f; 
-    font-family: 'Arial', sans-serif; 
+    padding: 10px;
+    background-color: #052b6f;
+    font-family: 'Arial', sans-serif;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px; 
+    padding: 10px 15px;
     font-weight: bold;
     {% comment %} transition: background-color 0.3s, color 0.3s; {% endcomment %}
 }
